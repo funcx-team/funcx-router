@@ -102,4 +102,4 @@ routeMatcher.toPath({ id: "user.image", userId: 1234, imageId: 5678 });
 
 ## API Reference
 
-[Link](docs/index.md)
+[Link](https://funcx-team.github.io/funcx-router/)
