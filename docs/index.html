@@ -83,7 +83,7 @@ stateHistory.on((stateParam)=&gt;{
   console.log(&quot;LOG: &quot;, JSON.stringify(stateParam))  
 })
 
-stateHistory.updatePath(&apos;/user&apos;, {&quot;options: {&quot;lang&quot;: &quot;en&quot;}});
+stateHistory.updatePath(&apos;/user&apos;, {&quot;options&quot;: {&quot;lang&quot;: &quot;en&quot;}});
 stateHistory.updatePath(&apos;/user/12345&apos;, {&quot;options: {&quot;lang&quot;: &quot;ja&quot;}});
 
 history.back();// LOG: { &quot;path&quot;: &quot;/user/&quot;, &quot;localValue&quot;: {&quot;lang&quot;: &quot;en&quot;}}
