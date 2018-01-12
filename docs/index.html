@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | funcx-router</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/routeMatcher.js~RouteMatcher.html">RouteMatcher</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~HashStateHistory.html">HashStateHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~PathStateHistory.html">PathStateHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~StateHistory.html">StateHistory</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="funcx-router">funcX Router</h1><p>Universal routing utility for Javascript Application without dependency to any framework (including funcX).</p>
+<p>funcX Router gives the way to convert the both of predefined path and arbitrary value to/from url and manipulate it as historical state.</p>
+<pre><code><code class="source-code prettyprint">// URL Path
+#/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==
+      or
+/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==
+
+// Path Parameter
+{ &quot;path&quot;: &quot;/user/1234&quot;, &quot;localValue&quot;: {&quot;lang&quot;: &quot;en&quot;}}
+
+// Route Parameter
+{id: &quot;user&quot;, userId: &quot;1234&quot;}</code>
+</code></pre><h2 id="installation">Installation</h2><pre><code><code class="source-code prettyprint">npm install funcx-router</code>
+</code></pre><h2 id="components">Components</h2><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StateHistory</td>
+<td>Register string (path) and arbitrary value (localValue) as state.</td>
+</tr>
+<tr>
+<td>HashStateHistory</td>
+<td>Implemenetation of StateHistory with location.hash.</td>
+</tr>
+<tr>
+<td>PathStateHistory</td>
+<td>Implemenetation of StateHistory with location.pathname and location.query.</td>
+</tr>
+<tr>
+<td>RouteMatcher</td>
+<td>Convert route &lt;-&gt; path with toPath() and toRoute() method.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage--statehistory-">Usage (StateHistory)</h2><pre><code class="lang-js"><code class="source-code prettyprint">import { HashStateHistory } from &apos;funcx-router&apos;;
+const stateHistory = new HashStateHistory();
+
+stateHistory.on((stateParam)=&gt;{
+  console.log(&quot;LOG: &quot;, JSON.stringify(stateParam))  
+})
+
+stateHistory.updatePath(&apos;/user&apos;, {&quot;options: {&quot;lang&quot;: &quot;en&quot;}});
+stateHistory.updatePath(&apos;/user/12345&apos;, {&quot;options: {&quot;lang&quot;: &quot;ja&quot;}});
+
+history.back();// LOG: { &quot;path&quot;: &quot;/user/&quot;, &quot;localValue&quot;: {&quot;lang&quot;: &quot;en&quot;}}
+
+console.log(history.hash); // #/user?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==
+
+location.hash = &quot;#/thing?InBxciI=&quot;; // LOG: { &quot;path&quot;: &quot;/thing&quot;, &quot;localValue&quot;: &quot;pqr&quot;}
+
+stateHistory.setShareMode(false)
+
+console.log(history.hash); // #/thing
+
+// localValue is hided but still alive as an inner state.</code>
+</code></pre>
+<h2 id="usage--routematcher-">Usage (RouteMatcher)</h2><pre><code class="lang-js"><code class="source-code prettyprint">import { RouteMatcher } from &quot;funcx-router&quot;;
+const routeMatcher = new RouteMatcher([
+  {
+    path: &quot;/user/:userId&quot;,
+    id: &quot;user&quot;,
+    params: {
+      mainComponent: &quot;user&quot;,
+      component: ActionPanel,
+      schema: schema,
+    },
+    children: [
+      {
+        path: &quot;/image/:imageId&quot;,
+        id: &quot;image&quot;,
+        params: {
+          subComponent: &quot;image&quot;,
+        },
+      },
+    ],
+  },
+  {
+    path: &quot;/rep/:userId*&quot;,
+    id: &quot;rep&quot;,
+  },
+  {
+    path: &quot;*&quot;,
+    id: &quot;all&quot;,
+  },
+]);
+
+routeMatcher.route(&quot;/user/1234/image/5678&quot;);
+// {value: { id: &quot;user.image&quot;, userId: 1234, imageId: 5678}, params: {mainComponent: &apos;user&apos;, subComponent: &apos;image&apos;}}
+routeMatcher.route(&quot;/rep/1234/5678&quot;);
+// {value: { id: &quot;rep&quot;, userId: [&quot;1234&quot;, &quot;5678&quot;]}}
+
+routeMatcher.toPath({ id: &quot;user.image&quot;, userId: 1234, imageId: 5678 });
+// &quot;/user/1234/image/5678&quot;</code>
+</code></pre>
+<h2 id="api-reference">API Reference</h2><p><a href="docs/index.md">Link</a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

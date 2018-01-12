@@ -1,0 +1,8 @@
+{
+  "presets": ["env", "flow"],
+  "plugins": [
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-async-to-generator"
+  ]
+}

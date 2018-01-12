@@ -1,0 +1,17 @@
+{
+  "coverage": "100%",
+  "expectCount": 46,
+  "actualCount": 46,
+  "files": {
+    "src/routeMatcher.js": {
+      "expectCount": 18,
+      "actualCount": 18,
+      "undocumentLines": []
+    },
+    "src/stateHistory.js": {
+      "expectCount": 28,
+      "actualCount": 28,
+      "undocumentLines": []
+    }
+  }
+}

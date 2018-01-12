@@ -1,0 +1,25 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "plugins": [
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "classProperties": true,
+        "objectRestSpread": true,
+        "doExpressions": true,
+        "functionBind": true,
+        "functionSent": true,
+        "asyncGenerators": true,
+        "decorators": true,
+        "exportExtensions": true,
+        "dynamicImport": true
+      }
+    },
+    { "name": "esdoc-flow-type-plugin", "option": { "enable": true } },
+    {
+      "name": "esdoc-standard-plugin"
+    },
+    { "name": "esdoc-lint-plugin", "option": { "enable": false } }
+  ]
+}

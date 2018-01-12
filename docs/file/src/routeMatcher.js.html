@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/routeMatcher.js | funcx-router</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/routeMatcher.js~RouteMatcher.html">RouteMatcher</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~HashStateHistory.html">HashStateHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~PathStateHistory.html">PathStateHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~StateHistory.html">StateHistory</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/routeMatcher.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// @flow
+
+import pathToRegexp from &quot;path-to-regexp&quot;;
+
+/** @ignore */
+interface Route {
+  value: any;
+  params: any;
+  childPath?: ?string;
+}
+
+/** @ignore */
+class RouteEntry {
+  /** @ignore */
+  params: any;
+  /** @ignore */
+  id: string;
+  /** @ignore */
+  regexp: RegExp;
+  /** @ignore */
+  toPath: any =&gt; string;
+  /** @ignore */
+  keys = [];
+  /** @ignore */
+  isStar: boolean;
+  /** @ignore */
+  isPrefix: boolean;
+  /** @ignore */
+  childMatcher: RouteMatcher;
+  /** @ignore */
+  constructor(routeSetting: {
+    params: any,
+    id: string,
+    path: string,
+    children: any,
+    isPrefix: boolean,
+  }) {
+    this.params = routeSetting.params;
+    this.id = routeSetting.id;
+    const pathOptions = Object.assign(
+      ({ end: !routeSetting.isPrefix &amp;&amp; !routeSetting.children }: any),
+      routeSetting
+    );
+    this.isPrefix = !pathOptions.end;
+    this.regexp = pathToRegexp(routeSetting.path, this.keys, pathOptions);
+    this.toPath = pathToRegexp.compile(routeSetting.path);
+    this.isStar = routeSetting.path === &quot;*&quot;;
+    if (routeSetting.children) {
+      this.childMatcher = new RouteMatcher(routeSetting.children);
+    }
+  }
+  /** @ignore */
+  match(path: string): ?Route {
+    if (path === null) {
+      return null;
+    }
+    if (this.isStar) {
+      return {
+        value: {
+          &quot;0&quot;: this.decodeParam(path),
+          id: this.id,
+        },
+        params: this.params,
+      };
+    }
+    const match = this.regexp.exec(path);
+    if (!match) {
+      return null;
+    }
+    const value = { id: this.id };
+    for (let i = 1; i &lt; match.length; i += 1) {
+      const key = this.keys[i - 1];
+      const val = this.decodeParam(match[i]);
+      if (
+        val !== undefined ||
+        !Object.prototype.hasOwnProperty.call(value, key.name)
+      ) {
+        if (key.repeat &amp;&amp; val) {
+          value[key.name] = val.split(key.delimiter);
+        } else {
+          value[key.name] = val;
+        }
+      }
+    }
+    let childPath: ?string = null;
+    if (this.isPrefix) {
+      childPath = path.slice(match[0].length);
+    }
+    return {
+      value,
+      params: this.params,
+      childPath: childPath,
+    };
+  }
+  /** @ignore */
+  decodeParam(val: any) {
+    if (typeof val !== &quot;string&quot; || val.length === 0) {
+      return val;
+    }
+    try {
+      return decodeURIComponent(val);
+    } catch (err) {
+      if (err instanceof URIError) {
+        err.message = `Failed to decode param &apos;${val}&apos;`;
+        err.status = 400;
+        err.statusCode = 400;
+      }
+      throw err;
+    }
+  }
+}
+
+/** Covert Route value and path to the each other */
+export class RouteMatcher {
+  /** @ignore */
+  routeEntries: RouteEntry[];
+  /** @ignore */
+  routeEntryMap = { RouteEntry };
+  /**
+   * routeSettings: {
+   *    params: any,
+   *    id: string,
+   *    path: string,
+   *    children: any,
+   *    isPrefix: boolean,
+   *  }[]
+   * @param {{}[]} routeSettings
+   */
+  constructor(
+    routeSettings: {
+      params: any,
+      id: string,
+      path: string,
+      children: any,
+      isPrefix: boolean,
+    }[]
+  ) {
+    this.routeEntries = routeSettings.map(routeSetting =&gt; {
+      const routeEntry = new RouteEntry(routeSetting);
+      this.routeEntryMap[routeSetting.id] = routeEntry;
+      return routeEntry;
+    });
+  }
+  /**
+   * Convert path string to route value
+   * @return {
+   *     value: any,
+   *     params: any
+   *  }
+   */
+  route(path: string): ?Route {
+    for (const routeEntry of this.routeEntries) {
+      const response: any = routeEntry.match(path);
+      if (response) {
+        if (response.childPath &amp;&amp; routeEntry.childMatcher) {
+          const childResponse = routeEntry.childMatcher.route(
+            response.childPath
+          );
+          if (childResponse) {
+            Object.assign(response.value, childResponse.value, {
+              id: response.value.id + &quot;.&quot; + childResponse.value.id,
+            });
+            response.params = Object.assign(
+              {},
+              response.params,
+              childResponse.params
+            );
+          }
+          delete response.childPath;
+        }
+        return response;
+      }
+    }
+    return null;
+  }
+  /**
+   * Convert route value to path string
+   * @param {Object} param param
+   * @param {string[]} ids internal use
+   */
+  toPath(param: any, _ids: ?(string[]) = null): string {
+    const ids = _ids || param.id.split(&quot;.&quot;);
+    const id = ids[0];
+    if (!id) {
+      return &quot;&quot;;
+    }
+    const routeEntry = this.routeEntryMap[id];
+    let path = routeEntry.toPath(param);
+    if (ids.length &gt; 1 &amp;&amp; routeEntry.childMatcher) {
+      path += routeEntry.childMatcher.toPath(param, ids.slice(1));
+    }
+    return path;
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

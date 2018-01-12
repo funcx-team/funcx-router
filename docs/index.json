@@ -1,0 +1,1689 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export { HashStateHistory, PathStateHistory } from \"./stateHistory\";\nexport { RouteMatcher } from \"./routeMatcher\";\n",
+    "static": true,
+    "longname": "/Users/ikedanorimasa/git-work/funcx/funcx-router/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "src/routeMatcher.js",
+    "content": "// @flow\n\nimport pathToRegexp from \"path-to-regexp\";\n\n/** @ignore */\ninterface Route {\n  value: any;\n  params: any;\n  childPath?: ?string;\n}\n\n/** @ignore */\nclass RouteEntry {\n  /** @ignore */\n  params: any;\n  /** @ignore */\n  id: string;\n  /** @ignore */\n  regexp: RegExp;\n  /** @ignore */\n  toPath: any => string;\n  /** @ignore */\n  keys = [];\n  /** @ignore */\n  isStar: boolean;\n  /** @ignore */\n  isPrefix: boolean;\n  /** @ignore */\n  childMatcher: RouteMatcher;\n  /** @ignore */\n  constructor(routeSetting: {\n    params: any,\n    id: string,\n    path: string,\n    children: any,\n    isPrefix: boolean,\n  }) {\n    this.params = routeSetting.params;\n    this.id = routeSetting.id;\n    const pathOptions = Object.assign(\n      ({ end: !routeSetting.isPrefix && !routeSetting.children }: any),\n      routeSetting\n    );\n    this.isPrefix = !pathOptions.end;\n    this.regexp = pathToRegexp(routeSetting.path, this.keys, pathOptions);\n    this.toPath = pathToRegexp.compile(routeSetting.path);\n    this.isStar = routeSetting.path === \"*\";\n    if (routeSetting.children) {\n      this.childMatcher = new RouteMatcher(routeSetting.children);\n    }\n  }\n  /** @ignore */\n  match(path: string): ?Route {\n    if (path === null) {\n      return null;\n    }\n    if (this.isStar) {\n      return {\n        value: {\n          \"0\": this.decodeParam(path),\n          id: this.id,\n        },\n        params: this.params,\n      };\n    }\n    const match = this.regexp.exec(path);\n    if (!match) {\n      return null;\n    }\n    const value = { id: this.id };\n    for (let i = 1; i < match.length; i += 1) {\n      const key = this.keys[i - 1];\n      const val = this.decodeParam(match[i]);\n      if (\n        val !== undefined ||\n        !Object.prototype.hasOwnProperty.call(value, key.name)\n      ) {\n        if (key.repeat && val) {\n          value[key.name] = val.split(key.delimiter);\n        } else {\n          value[key.name] = val;\n        }\n      }\n    }\n    let childPath: ?string = null;\n    if (this.isPrefix) {\n      childPath = path.slice(match[0].length);\n    }\n    return {\n      value,\n      params: this.params,\n      childPath: childPath,\n    };\n  }\n  /** @ignore */\n  decodeParam(val: any) {\n    if (typeof val !== \"string\" || val.length === 0) {\n      return val;\n    }\n    try {\n      return decodeURIComponent(val);\n    } catch (err) {\n      if (err instanceof URIError) {\n        err.message = `Failed to decode param '${val}'`;\n        err.status = 400;\n        err.statusCode = 400;\n      }\n      throw err;\n    }\n  }\n}\n\n/** Covert Route value and path to the each other */\nexport class RouteMatcher {\n  /** @ignore */\n  routeEntries: RouteEntry[];\n  /** @ignore */\n  routeEntryMap = { RouteEntry };\n  /**\n   * routeSettings: {\n   *    params: any,\n   *    id: string,\n   *    path: string,\n   *    children: any,\n   *    isPrefix: boolean,\n   *  }[]\n   * @param {{}[]} routeSettings\n   */\n  constructor(\n    routeSettings: {\n      params: any,\n      id: string,\n      path: string,\n      children: any,\n      isPrefix: boolean,\n    }[]\n  ) {\n    this.routeEntries = routeSettings.map(routeSetting => {\n      const routeEntry = new RouteEntry(routeSetting);\n      this.routeEntryMap[routeSetting.id] = routeEntry;\n      return routeEntry;\n    });\n  }\n  /**\n   * Convert path string to route value\n   * @return {\n   *     value: any,\n   *     params: any\n   *  }\n   */\n  route(path: string): ?Route {\n    for (const routeEntry of this.routeEntries) {\n      const response: any = routeEntry.match(path);\n      if (response) {\n        if (response.childPath && routeEntry.childMatcher) {\n          const childResponse = routeEntry.childMatcher.route(\n            response.childPath\n          );\n          if (childResponse) {\n            Object.assign(response.value, childResponse.value, {\n              id: response.value.id + \".\" + childResponse.value.id,\n            });\n            response.params = Object.assign(\n              {},\n              response.params,\n              childResponse.params\n            );\n          }\n          delete response.childPath;\n        }\n        return response;\n      }\n    }\n    return null;\n  }\n  /**\n   * Convert route value to path string\n   * @param {Object} param param\n   * @param {string[]} ids internal use\n   */\n  toPath(param: any, _ids: ?(string[]) = null): string {\n    const ids = _ids || param.id.split(\".\");\n    const id = ids[0];\n    if (!id) {\n      return \"\";\n    }\n    const routeEntry = this.routeEntryMap[id];\n    let path = routeEntry.toPath(param);\n    if (ids.length > 1 && routeEntry.childMatcher) {\n      path += routeEntry.childMatcher.toPath(param, ids.slice(1));\n    }\n    return path;\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/ikedanorimasa/git-work/funcx/funcx-router/src/routeMatcher.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "RouteEntry",
+    "memberof": "src/routeMatcher.js",
+    "static": true,
+    "longname": "src/routeMatcher.js~RouteEntry",
+    "access": "public",
+    "export": false,
+    "importPath": "funcx-router/src/routeMatcher.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "ignore": true,
+    "interface": false
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "name": "params",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#params",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "any"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#id",
+    "access": "public",
+    "description": "",
+    "lineNumber": 17,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "regexp",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#regexp",
+    "access": "public",
+    "description": "",
+    "lineNumber": 19,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "RegExp"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "toPath",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#toPath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 21,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "keys",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#keys",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "isStar",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#isStar",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "isPrefix",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#isPrefix",
+    "access": "public",
+    "description": "",
+    "lineNumber": 27,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "childMatcher",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#childMatcher",
+    "access": "public",
+    "description": "",
+    "lineNumber": 29,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "RouteMatcher"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 31,
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "match",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#match",
+    "access": "public",
+    "description": " ",
+    "lineNumber": 53,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "nullable"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "decodeParam",
+    "memberof": "src/routeMatcher.js~RouteEntry",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteEntry#decodeParam",
+    "access": "public",
+    "description": "",
+    "lineNumber": 96,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "val",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "class",
+    "name": "RouteMatcher",
+    "memberof": "src/routeMatcher.js",
+    "static": true,
+    "longname": "src/routeMatcher.js~RouteMatcher",
+    "access": "public",
+    "export": true,
+    "importPath": "funcx-router/src/routeMatcher.js",
+    "importStyle": "{RouteMatcher}",
+    "description": "Covert Route value and path to the each other",
+    "lineNumber": 114,
+    "interface": false
+  },
+  {
+    "__docId__": 70,
+    "kind": "member",
+    "name": "routeEntries",
+    "memberof": "src/routeMatcher.js~RouteMatcher",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteMatcher#routeEntries",
+    "access": "public",
+    "description": "",
+    "lineNumber": 116,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "array"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "member",
+    "name": "routeEntryMap",
+    "memberof": "src/routeMatcher.js~RouteMatcher",
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteMatcher#routeEntryMap",
+    "access": "public",
+    "description": null,
+    "lineNumber": 118,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/routeMatcher.js~RouteMatcher",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteMatcher#constructor",
+    "access": "public",
+    "description": "routeSettings: {\n   params: any,\n   id: string,\n   path: string,\n   children: any,\n   isPrefix: boolean,\n }[]",
+    "lineNumber": 129,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "{}[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "routeSettings",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "route",
+    "memberof": "src/routeMatcher.js~RouteMatcher",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteMatcher#route",
+    "access": "public",
+    "description": "Convert path string to route value  ",
+    "lineNumber": 151,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "\n    value: any,\n    params: any\n "
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "toPath",
+    "memberof": "src/routeMatcher.js~RouteMatcher",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/routeMatcher.js~RouteMatcher#toPath",
+    "access": "public",
+    "description": "Convert route value to path string  ",
+    "lineNumber": 181,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param",
+        "description": "param"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ids",
+        "description": "internal use"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/stateHistory.js",
+    "content": "// @flow\n\nimport EventEmitter from \"events\";\nimport stringify from \"json-stable-stringify\";\nimport { Buffer } from \"buffer\";\n\n/** @abstract */\nexport class StateHistory {\n  /** @ignore */\n  shareMode = true;\n  /** @ignore */\n  localValue: any;\n  /** @ignore */\n  localData: string;\n  /** @ignore */\n  urlPath: string;\n  /** @ignore */\n  options: any;\n  /** @ignore */\n  path: string;\n  /** @ignore */\n  emitter = new EventEmitter();\n  /** Constructor\n   * @param {{onPathChange: function}} options options\n   */\n  constructor(options: {\n    onPathChange: (path: string, localValue: any) => void,\n  }) {\n    this.options = options || {};\n    if (this.options.onPathChange) {\n      this.emitter.on(\"pathChange\", this.options.onPathChange);\n    }\n    const currentState = this.parsePath();\n    this.updatePath(currentState.path, null, {\n      enableEvent: true,\n      localData: currentState.localData,\n    });\n    window.addEventListener(\"popstate\", this.onPopState, false);\n  }\n  /** Register listner\n   * @param {function(path: string, localValue: any): void} listener listener\n   */\n  on(listener: (path: string, localValue: any) => void): void {\n    this.emitter.on(\"pathChange\", listener);\n  }\n  /** Remove listner\n   * @param {function(path: string, localValue: any): void} listener listener\n   */\n  off(listener: Function) {\n    this.emitter.removeListener(\"pathChange\", listener);\n  }\n  /** Release all resources */\n  close() {\n    window.removeEventListener(\"popstate\", this.onPopState, false);\n  }\n  /** Alias of history.back() */\n  back() {\n    history.back();\n  }\n  /** Alias of history.forward() */\n  forward() {\n    history.forward();\n  }\n  /** @ignore */\n  parsePath() {\n    throw new Error(\"not implemented\");\n  }\n  /** @ignore */\n  compoundPath(path: string, localData: any) {\n    throw new Error(\"not implemented\");\n  }\n  /** @ignore */\n  onPopState = (e: any) => {\n    const currentState = this.parsePath();\n    this.updatePath(currentState.path, null, {\n      enableEvent: true,\n      localData: currentState.localData,\n    });\n  };\n  /** @ignore */\n  toData(value: any) {\n    return value && Buffer.from(stringify(value)).toString(\"base64\");\n  }\n  /** @ignore */\n  fromData(data: string) {\n    return data && JSON.parse(Buffer.from(data, \"base64\").toString());\n  }\n  /** Set the value to determine localValue is reflect to URL */\n  setShareMode(shareMode: boolean) {\n    this.shareMode = shareMode;\n    this.updatePath(this.path, null, { localData: this.localData });\n  }\n\n  /**\n   * Update inner state\n   * @param {string} newPath newPath\n   * @param {Object} localValue arbitrary value\n   * @param {{title: string}} option options\n   */\n  updatePath(\n    _newPath: string,\n    localValue: any,\n    option: { enableEvent?: boolean, localData: string, title?: string }\n  ) {\n    const newPath = _newPath || this.path;\n    const { enableEvent, title } = option || {};\n    let localData: string = (option || {}).localData;\n    if (!localData && localValue) {\n      localData = this.toData(localValue);\n    }\n\n    // param -> path(& state)\n    const currentState = this.parsePath();\n    const urlPath = this.compoundPath(newPath, localData);\n    if (newPath !== currentState.path) {\n      window.history.pushState({ localData: localData }, \"\", urlPath);\n    } else if (\n      localData !== currentState.localData ||\n      urlPath !== this.urlPath\n    ) {\n      window.history.replaceState({ localData: localData }, \"\", urlPath);\n    }\n    if (title) {\n      document.title = title;\n    }\n    // path(& state) -> inner, param\n    if (this.urlPath !== urlPath) {\n      this.urlPath = urlPath;\n      if (this.path !== newPath) {\n        this.path = newPath;\n      }\n      if (this.localData !== localData) {\n        this.localData = localData;\n        this.localValue = this.fromData(localData);\n      }\n      if (enableEvent) {\n        this.emitter.emit(\"pathChange\", {\n          path: newPath,\n          localValue: this.localValue,\n        });\n      }\n    }\n  }\n  /**\n   * get current state\n   */\n  getCurrentParam(): { path: string, localValue: any } {\n    return {\n      path: this.path,\n      localValue: this.localValue,\n    };\n  }\n}\n\n/**\n * Implementation of StateHistory with location.pathname and locaiton.query\n * @example\n * // URL\n * /user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==\n * // getCurrentParam()\n * { \"path\": \"/user/1234\", \"localValue\": {\"lang\": \"en\"}}\n */\nexport class PathStateHistory extends StateHistory {\n  /** @ignore */\n  parsePath() {\n    return {\n      path: location.pathname,\n      localData:\n        (location.search && location.search.slice(1)) ||\n        (history.state && history.state.localData),\n    };\n  }\n  /** @ignore */\n  compoundPath(path: string, localData: any) {\n    return path + (localData && this.shareMode ? \"?\" + localData : \"\");\n  }\n}\n\n/**\n * Implementation of StateHistory with location.hash\n * @example\n * // URL\n * /somepath#/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==\n * // getCurrentParam()\n * { \"path\": \"/user/1234\", \"localValue\": {\"lang\": \"en\"}}\n */\nclass HashStateHistory extends StateHistory {\n  /** @ignore */\n  parsePath() {\n    const path = (location.hash && location.hash.slice(1)) || \"/\";\n    const match = path.match(/^([^\\?]+)(?:\\?(.*))?$/);\n    return (\n      (match && {\n        path: match[1],\n        localData: match[2] || (history.state && history.state.localData),\n      }) ||\n      {}\n    );\n  }\n  /** @ignore */\n  compoundPath(path: string, localData: any) {\n    return (\n      location.pathname +\n      \"#\" +\n      path +\n      (localData && this.shareMode ? \"?\" + localData : \"\")\n    );\n  }\n}\n\nexport { HashStateHistory };\n",
+    "static": true,
+    "longname": "/Users/ikedanorimasa/git-work/funcx/funcx-router/src/stateHistory.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "class",
+    "name": "StateHistory",
+    "memberof": "src/stateHistory.js",
+    "static": true,
+    "longname": "src/stateHistory.js~StateHistory",
+    "access": "public",
+    "export": true,
+    "importPath": "funcx-router/src/stateHistory.js",
+    "importStyle": "{StateHistory}",
+    "description": null,
+    "lineNumber": 8,
+    "abstract": true,
+    "interface": false
+  },
+  {
+    "__docId__": 78,
+    "kind": "member",
+    "name": "shareMode",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#shareMode",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "member",
+    "name": "localValue",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#localValue",
+    "access": "public",
+    "description": "",
+    "lineNumber": 12,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "any"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "member",
+    "name": "localData",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#localData",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "member",
+    "name": "urlPath",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#urlPath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 16,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "member",
+    "name": "options",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#options",
+    "access": "public",
+    "description": "",
+    "lineNumber": 18,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "any"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "member",
+    "name": "path",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#path",
+    "access": "public",
+    "description": "",
+    "lineNumber": 20,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "member",
+    "name": "emitter",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#emitter",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 26,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "{onPathChange: function}"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "options"
+      }
+    ]
+  },
+  {
+    "__docId__": 87,
+    "kind": "method",
+    "name": "on",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#on",
+    "access": "public",
+    "description": "Register listner  ",
+    "lineNumber": 43,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function(path: string, localValue: any): void"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "listener",
+        "description": "listener"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "void"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "method",
+    "name": "off",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#off",
+    "access": "public",
+    "description": "Remove listner ",
+    "lineNumber": 49,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function(path: string, localValue: any): void"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "listener",
+        "description": "listener"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 89,
+    "kind": "method",
+    "name": "close",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#close",
+    "access": "public",
+    "description": "Release all resources ",
+    "lineNumber": 53,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 90,
+    "kind": "method",
+    "name": "back",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#back",
+    "access": "public",
+    "description": "Alias of history.back() ",
+    "lineNumber": 57,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 91,
+    "kind": "method",
+    "name": "forward",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#forward",
+    "access": "public",
+    "description": "Alias of history.forward() ",
+    "lineNumber": 61,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "parsePath",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#parsePath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 65,
+    "ignore": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 93,
+    "kind": "method",
+    "name": "compoundPath",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#compoundPath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 69,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "localData",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 94,
+    "kind": "member",
+    "name": "onPopState",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#onPopState",
+    "access": "public",
+    "description": null,
+    "lineNumber": 73,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "toData",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#toData",
+    "access": "public",
+    "description": "",
+    "lineNumber": 81,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "fromData",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#fromData",
+    "access": "public",
+    "description": "",
+    "lineNumber": 85,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "setShareMode",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#setShareMode",
+    "access": "public",
+    "description": "Set the value to determine localValue is reflect to URL ",
+    "lineNumber": 89,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "shareMode",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "method",
+    "name": "updatePath",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#updatePath",
+    "access": "public",
+    "description": "Update inner state ",
+    "lineNumber": 100,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "newPath",
+        "description": "newPath"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "localValue",
+        "description": "arbitrary value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "{title: string}"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "option",
+        "description": "options"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "getCurrentParam",
+    "memberof": "src/stateHistory.js~StateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~StateHistory#getCurrentParam",
+    "access": "public",
+    "description": "get current state  ",
+    "lineNumber": 147,
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 105,
+    "kind": "class",
+    "name": "PathStateHistory",
+    "memberof": "src/stateHistory.js",
+    "static": true,
+    "longname": "src/stateHistory.js~PathStateHistory",
+    "access": "public",
+    "export": true,
+    "importPath": "funcx-router/src/stateHistory.js",
+    "importStyle": "{PathStateHistory}",
+    "description": "Implementation of StateHistory with location.pathname and locaiton.query",
+    "examples": [
+      "// URL\n/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==\n// getCurrentParam()\n{ \"path\": \"/user/1234\", \"localValue\": {\"lang\": \"en\"}}"
+    ],
+    "lineNumber": 163,
+    "interface": false,
+    "extends": [
+      "StateHistory"
+    ]
+  },
+  {
+    "__docId__": 106,
+    "kind": "method",
+    "name": "parsePath",
+    "memberof": "src/stateHistory.js~PathStateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~PathStateHistory#parsePath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 165,
+    "ignore": true,
+    "params": [],
+    "return": {
+      "types": [
+        "{\"path\": *, \"localData\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 107,
+    "kind": "method",
+    "name": "compoundPath",
+    "memberof": "src/stateHistory.js~PathStateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~PathStateHistory#compoundPath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 174,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "localData",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 108,
+    "kind": "class",
+    "name": "HashStateHistory",
+    "memberof": "src/stateHistory.js",
+    "static": true,
+    "longname": "src/stateHistory.js~HashStateHistory",
+    "access": "public",
+    "export": true,
+    "importPath": "funcx-router/src/stateHistory.js",
+    "importStyle": "{HashStateHistory}",
+    "description": "Implementation of StateHistory with location.hash",
+    "examples": [
+      "// URL\n/somepath#/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==\n// getCurrentParam()\n{ \"path\": \"/user/1234\", \"localValue\": {\"lang\": \"en\"}}"
+    ],
+    "lineNumber": 187,
+    "interface": false,
+    "extends": [
+      "StateHistory"
+    ]
+  },
+  {
+    "__docId__": 109,
+    "kind": "method",
+    "name": "parsePath",
+    "memberof": "src/stateHistory.js~HashStateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~HashStateHistory#parsePath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 189,
+    "ignore": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "method",
+    "name": "compoundPath",
+    "memberof": "src/stateHistory.js~HashStateHistory",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stateHistory.js~HashStateHistory#compoundPath",
+    "access": "public",
+    "description": "",
+    "lineNumber": 201,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "localData",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# funcX Router\n\nUniversal routing utility for Javascript Application without dependency to any framework (including funcX).\n\nfuncX Router gives the way to convert the both of predefined path and arbitrary value to/from url and manipulate it as historical state.\n\n```\n// URL Path\n#/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==\n      or\n/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==\n\n// Path Parameter\n{ \"path\": \"/user/1234\", \"localValue\": {\"lang\": \"en\"}}\n\n// Route Parameter\n{id: \"user\", userId: \"1234\"}\n```\n\n## Installation\n\n```\nnpm install funcx-router\n```\n\n## Components\n\n| Name             | Description                                                                |\n| ---------------- | -------------------------------------------------------------------------- |\n| StateHistory     | Register string (path) and arbitrary value (localValue) as state.          |\n| HashStateHistory | Implemenetation of StateHistory with location.hash.                        |\n| PathStateHistory | Implemenetation of StateHistory with location.pathname and location.query. |\n| RouteMatcher     | Convert route <-> path with toPath() and toRoute() method.                 |\n\n## Usage (StateHistory)\n\n```js\nimport { HashStateHistory } from 'funcx-router';\nconst stateHistory = new HashStateHistory();\n\nstateHistory.on((stateParam)=>{\n  console.log(\"LOG: \", JSON.stringify(stateParam))  \n})\n\nstateHistory.updatePath('/user', {\"options: {\"lang\": \"en\"}});\nstateHistory.updatePath('/user/12345', {\"options: {\"lang\": \"ja\"}});\n\nhistory.back();// LOG: { \"path\": \"/user/\", \"localValue\": {\"lang\": \"en\"}}\n\nconsole.log(history.hash); // #/user?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==\n\nlocation.hash = \"#/thing?InBxciI=\"; // LOG: { \"path\": \"/thing\", \"localValue\": \"pqr\"}\n\nstateHistory.setShareMode(false)\n\nconsole.log(history.hash); // #/thing\n\n// localValue is hided but still alive as an inner state.\n```\n\n## Usage (RouteMatcher)\n\n```js\nimport { RouteMatcher } from \"funcx-router\";\nconst routeMatcher = new RouteMatcher([\n  {\n    path: \"/user/:userId\",\n    id: \"user\",\n    params: {\n      mainComponent: \"user\",\n      component: ActionPanel,\n      schema: schema,\n    },\n    children: [\n      {\n        path: \"/image/:imageId\",\n        id: \"image\",\n        params: {\n          subComponent: \"image\",\n        },\n      },\n    ],\n  },\n  {\n    path: \"/rep/:userId*\",\n    id: \"rep\",\n  },\n  {\n    path: \"*\",\n    id: \"all\",\n  },\n]);\n\nrouteMatcher.route(\"/user/1234/image/5678\");\n// {value: { id: \"user.image\", userId: 1234, imageId: 5678}, params: {mainComponent: 'user', subComponent: 'image'}}\nrouteMatcher.route(\"/rep/1234/5678\");\n// {value: { id: \"rep\", userId: [\"1234\", \"5678\"]}}\n\nrouteMatcher.toPath({ id: \"user.image\", userId: 1234, imageId: 5678 });\n// \"/user/1234/image/5678\"\n```\n\n## API Reference\n\n[Link](docs/index.md)\n",
+    "longname": "/Users/ikedanorimasa/git-work/funcx/funcx-router/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"funcx-router\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"build/index.js\",\n  \"scripts\": {\n    \"build\": \"babel src --out-dir build\",\n    \"watch\": \"babel -w src --out-dir build\",\n    \"test\": \"karma start\"\n  },\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"async-lock\": \"^1.1.0\",\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-eslint\": \"^8.0.1\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-plugin-transform-async-to-generator\": \"^6.24.1\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-flow\": \"^6.23.0\",\n    \"chai\": \"^4.1.2\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-flow-type-plugin\": \"^1.0.1\",\n    \"esdoc-publish-markdown-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"flow-bin\": \"^0.63.1\",\n    \"karma\": \"^2.0.0\",\n    \"karma-chai\": \"^0.1.0\",\n    \"karma-chrome-launcher\": \"^2.2.0\",\n    \"karma-mocha\": \"^1.3.0\",\n    \"karma-mocha-reporter\": \"^2.2.5\",\n    \"karma-requirejs\": \"^1.1.0\",\n    \"karma-sourcemap-loader\": \"^0.3.7\",\n    \"karma-webpack\": \"^2.0.9\",\n    \"mocha\": \"^4.1.0\",\n    \"npm\": \"^5.6.0\",\n    \"prettier-eslint\": \"^8.2.1\",\n    \"prettier-eslint-cli\": \"^4.4.0\",\n    \"requirejs\": \"^2.3.5\",\n    \"webpack\": \"^3.10.0\"\n  },\n  \"dependencies\": {\n    \"json-stable-stringify\": \"^1.0.1\",\n    \"path-to-regexp\": \"^2.1.0\"\n  }\n}\n",
+    "longname": "/Users/ikedanorimasa/git-work/funcx/funcx-router/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -1,0 +1,10 @@
+{
+    "flow.useNPMPackagedFlow": true,
+    "javascript.validate.enable": false,
+    "editor.formatOnSave": true,
+    "prettier.eslintIntegration": false,
+    "prettier.jsxBracketSameLine": false,
+    "prettier.trailingComma": "es5",
+    "editor.tabSize": 2
+  }
+  

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/stateHistory.js | funcx-router</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/routeMatcher.js~RouteMatcher.html">RouteMatcher</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~HashStateHistory.html">HashStateHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~PathStateHistory.html">PathStateHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stateHistory.js~StateHistory.html">StateHistory</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/stateHistory.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// @flow
+
+import EventEmitter from &quot;events&quot;;
+import stringify from &quot;json-stable-stringify&quot;;
+import { Buffer } from &quot;buffer&quot;;
+
+/** @abstract */
+export class StateHistory {
+  /** @ignore */
+  shareMode = true;
+  /** @ignore */
+  localValue: any;
+  /** @ignore */
+  localData: string;
+  /** @ignore */
+  urlPath: string;
+  /** @ignore */
+  options: any;
+  /** @ignore */
+  path: string;
+  /** @ignore */
+  emitter = new EventEmitter();
+  /** Constructor
+   * @param {{onPathChange: function}} options options
+   */
+  constructor(options: {
+    onPathChange: (path: string, localValue: any) =&gt; void,
+  }) {
+    this.options = options || {};
+    if (this.options.onPathChange) {
+      this.emitter.on(&quot;pathChange&quot;, this.options.onPathChange);
+    }
+    const currentState = this.parsePath();
+    this.updatePath(currentState.path, null, {
+      enableEvent: true,
+      localData: currentState.localData,
+    });
+    window.addEventListener(&quot;popstate&quot;, this.onPopState, false);
+  }
+  /** Register listner
+   * @param {function(path: string, localValue: any): void} listener listener
+   */
+  on(listener: (path: string, localValue: any) =&gt; void): void {
+    this.emitter.on(&quot;pathChange&quot;, listener);
+  }
+  /** Remove listner
+   * @param {function(path: string, localValue: any): void} listener listener
+   */
+  off(listener: Function) {
+    this.emitter.removeListener(&quot;pathChange&quot;, listener);
+  }
+  /** Release all resources */
+  close() {
+    window.removeEventListener(&quot;popstate&quot;, this.onPopState, false);
+  }
+  /** Alias of history.back() */
+  back() {
+    history.back();
+  }
+  /** Alias of history.forward() */
+  forward() {
+    history.forward();
+  }
+  /** @ignore */
+  parsePath() {
+    throw new Error(&quot;not implemented&quot;);
+  }
+  /** @ignore */
+  compoundPath(path: string, localData: any) {
+    throw new Error(&quot;not implemented&quot;);
+  }
+  /** @ignore */
+  onPopState = (e: any) =&gt; {
+    const currentState = this.parsePath();
+    this.updatePath(currentState.path, null, {
+      enableEvent: true,
+      localData: currentState.localData,
+    });
+  };
+  /** @ignore */
+  toData(value: any) {
+    return value &amp;&amp; Buffer.from(stringify(value)).toString(&quot;base64&quot;);
+  }
+  /** @ignore */
+  fromData(data: string) {
+    return data &amp;&amp; JSON.parse(Buffer.from(data, &quot;base64&quot;).toString());
+  }
+  /** Set the value to determine localValue is reflect to URL */
+  setShareMode(shareMode: boolean) {
+    this.shareMode = shareMode;
+    this.updatePath(this.path, null, { localData: this.localData });
+  }
+
+  /**
+   * Update inner state
+   * @param {string} newPath newPath
+   * @param {Object} localValue arbitrary value
+   * @param {{title: string}} option options
+   */
+  updatePath(
+    _newPath: string,
+    localValue: any,
+    option: { enableEvent?: boolean, localData: string, title?: string }
+  ) {
+    const newPath = _newPath || this.path;
+    const { enableEvent, title } = option || {};
+    let localData: string = (option || {}).localData;
+    if (!localData &amp;&amp; localValue) {
+      localData = this.toData(localValue);
+    }
+
+    // param -&gt; path(&amp; state)
+    const currentState = this.parsePath();
+    const urlPath = this.compoundPath(newPath, localData);
+    if (newPath !== currentState.path) {
+      window.history.pushState({ localData: localData }, &quot;&quot;, urlPath);
+    } else if (
+      localData !== currentState.localData ||
+      urlPath !== this.urlPath
+    ) {
+      window.history.replaceState({ localData: localData }, &quot;&quot;, urlPath);
+    }
+    if (title) {
+      document.title = title;
+    }
+    // path(&amp; state) -&gt; inner, param
+    if (this.urlPath !== urlPath) {
+      this.urlPath = urlPath;
+      if (this.path !== newPath) {
+        this.path = newPath;
+      }
+      if (this.localData !== localData) {
+        this.localData = localData;
+        this.localValue = this.fromData(localData);
+      }
+      if (enableEvent) {
+        this.emitter.emit(&quot;pathChange&quot;, {
+          path: newPath,
+          localValue: this.localValue,
+        });
+      }
+    }
+  }
+  /**
+   * get current state
+   */
+  getCurrentParam(): { path: string, localValue: any } {
+    return {
+      path: this.path,
+      localValue: this.localValue,
+    };
+  }
+}
+
+/**
+ * Implementation of StateHistory with location.pathname and locaiton.query
+ * @example
+ * // URL
+ * /user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==
+ * // getCurrentParam()
+ * { &quot;path&quot;: &quot;/user/1234&quot;, &quot;localValue&quot;: {&quot;lang&quot;: &quot;en&quot;}}
+ */
+export class PathStateHistory extends StateHistory {
+  /** @ignore */
+  parsePath() {
+    return {
+      path: location.pathname,
+      localData:
+        (location.search &amp;&amp; location.search.slice(1)) ||
+        (history.state &amp;&amp; history.state.localData),
+    };
+  }
+  /** @ignore */
+  compoundPath(path: string, localData: any) {
+    return path + (localData &amp;&amp; this.shareMode ? &quot;?&quot; + localData : &quot;&quot;);
+  }
+}
+
+/**
+ * Implementation of StateHistory with location.hash
+ * @example
+ * // URL
+ * /somepath#/user/1234?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==
+ * // getCurrentParam()
+ * { &quot;path&quot;: &quot;/user/1234&quot;, &quot;localValue&quot;: {&quot;lang&quot;: &quot;en&quot;}}
+ */
+class HashStateHistory extends StateHistory {
+  /** @ignore */
+  parsePath() {
+    const path = (location.hash &amp;&amp; location.hash.slice(1)) || &quot;/&quot;;
+    const match = path.match(/^([^\?]+)(?:\?(.*))?$/);
+    return (
+      (match &amp;&amp; {
+        path: match[1],
+        localData: match[2] || (history.state &amp;&amp; history.state.localData),
+      }) ||
+      {}
+    );
+  }
+  /** @ignore */
+  compoundPath(path: string, localData: any) {
+    return (
+      location.pathname +
+      &quot;#&quot; +
+      path +
+      (localData &amp;&amp; this.shareMode ? &quot;?&quot; + localData : &quot;&quot;)
+    );
+  }
+}
+
+export { HashStateHistory };
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
