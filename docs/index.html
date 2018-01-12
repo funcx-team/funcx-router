@@ -76,23 +76,23 @@
 </tr>
 </tbody>
 </table>
-<h2 id="usage--statehistory-">Usage (StateHistory)</h2><pre><code class="lang-js"><code class="source-code prettyprint">import { HashStateHistory } from &apos;funcx-router&apos;;
+<h2 id="usage--statehistory-">Usage (StateHistory)</h2><pre><code class="lang-js"><code class="source-code prettyprint">import { HashStateHistory } from &quot;funcx-router&quot;;
 const stateHistory = new HashStateHistory();
 
-stateHistory.on((stateParam)=&gt;{
-  console.log(&quot;LOG: &quot;, JSON.stringify(stateParam))  
-})
+stateHistory.on(stateParam =&gt; {
+  console.log(&quot;LOG: &quot;, JSON.stringify(stateParam));
+});
 
-stateHistory.updatePath(&apos;/user&apos;, {&quot;options&quot;: {&quot;lang&quot;: &quot;en&quot;}});
-stateHistory.updatePath(&apos;/user/12345&apos;, {&quot;options: {&quot;lang&quot;: &quot;ja&quot;}});
+stateHistory.updatePath(&quot;/user&quot;, { options: { lang: &quot;en&quot; } });
+stateHistory.updatePath(&quot;/user/12345&quot;, { options: { lang: &quot;ja&quot; } });
 
-history.back();// LOG: { &quot;path&quot;: &quot;/user/&quot;, &quot;localValue&quot;: {&quot;lang&quot;: &quot;en&quot;}}
+history.back(); // LOG: { &quot;path&quot;: &quot;/user/&quot;, &quot;localValue&quot;: {&quot;lang&quot;: &quot;en&quot;}}
 
 console.log(history.hash); // #/user?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==
 
 location.hash = &quot;#/thing?InBxciI=&quot;; // LOG: { &quot;path&quot;: &quot;/thing&quot;, &quot;localValue&quot;: &quot;pqr&quot;}
 
-stateHistory.setShareMode(false)
+stateHistory.setShareMode(false);
 
 console.log(history.hash); // #/thing
 
@@ -136,7 +136,7 @@ routeMatcher.route(&quot;/rep/1234/5678&quot;);
 routeMatcher.toPath({ id: &quot;user.image&quot;, userId: 1234, imageId: 5678 });
 // &quot;/user/1234/image/5678&quot;</code>
 </code></pre>
-<h2 id="api-reference">API Reference</h2><p><a href="https://funcx-team.github.io/funcx-router/">Link</a></p>
+<h2 id="api-reference">API Reference</h2><p><a href="https://funcx-team.github.io/funcx-router/identifiers.html">Link</a></p>
 </div>
 </div>
 

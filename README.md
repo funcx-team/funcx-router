@@ -35,23 +35,23 @@ npm install funcx-router
 ## Usage (StateHistory)
 
 ```js
-import { HashStateHistory } from 'funcx-router';
+import { HashStateHistory } from "funcx-router";
 const stateHistory = new HashStateHistory();
 
-stateHistory.on((stateParam)=>{
-  console.log("LOG: ", JSON.stringify(stateParam))  
-})
+stateHistory.on(stateParam => {
+  console.log("LOG: ", JSON.stringify(stateParam));
+});
 
-stateHistory.updatePath('/user', {"options": {"lang": "en"}});
-stateHistory.updatePath('/user/12345', {"options: {"lang": "ja"}});
+stateHistory.updatePath("/user", { options: { lang: "en" } });
+stateHistory.updatePath("/user/12345", { options: { lang: "ja" } });
 
-history.back();// LOG: { "path": "/user/", "localValue": {"lang": "en"}}
+history.back(); // LOG: { "path": "/user/", "localValue": {"lang": "en"}}
 
 console.log(history.hash); // #/user?eyJvcHRpb25zIjp7ImxhbmciOiJqYSJ9fQ==
 
 location.hash = "#/thing?InBxciI="; // LOG: { "path": "/thing", "localValue": "pqr"}
 
-stateHistory.setShareMode(false)
+stateHistory.setShareMode(false);
 
 console.log(history.hash); // #/thing
 
@@ -102,4 +102,4 @@ routeMatcher.toPath({ id: "user.image", userId: 1234, imageId: 5678 });
 
 ## API Reference
 
-[Link](https://funcx-team.github.io/funcx-router/)
+[Link](https://funcx-team.github.io/funcx-router/identifiers.html)
